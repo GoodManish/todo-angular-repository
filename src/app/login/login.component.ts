@@ -9,7 +9,7 @@ import {HardcodedAuthenticationService} from '../service/hardcoded-authenticatio
 })
 export class LoginComponent implements OnInit {
 
-  myUsername: string = "in28min";
+  myUsername: string = "in28minutes";
   myPassword: string = "";
   errorMessage="Invalid Credential!!!";
   invalidCredential = false;

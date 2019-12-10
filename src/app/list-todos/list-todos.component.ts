@@ -12,9 +12,6 @@ export class ListTodosComponent implements OnInit {
     new Todo(1, 'Learn Dance', false, new Date()),
     new Todo(2, 'To become expert in Angular', false, new Date()),
     new Todo(3, 'Visit all over world', false, new Date())
-    // { id:1, description: "Learn to dance"},
-    // { id:2, description: "Learn Angular"},
-    // { id:3, description: "Create enterprise app"}
   ];
 
   constructor() {}

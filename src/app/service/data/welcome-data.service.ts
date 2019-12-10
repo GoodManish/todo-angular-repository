@@ -14,6 +14,11 @@ export class WelcomeDataService {
     let url = "http://localhost:8080/helloworldbean";
     return this.http.get<HelloWorldBean>(url);
   }
+
+  executeHelloWorldBeanServicewithParam(name){
+    let url = `http://localhost:8080/helloworldbean/pathvariable/${name}`;
+    return this.http.get<HelloWorldBean>(url);
+  }
 }
 
 export class HelloWorldBean{

@@ -26,12 +26,17 @@ export class WelcomeComponent implements OnInit {
       error => this.handleErrorResponse(error)
     );
 
-    console.log('Last line of getWelcomeMessage()');
+  }
+
+  getWelcomeMessageWithParam() {
+    this.welcomeDataService.executeHelloWorldBeanServicewithParam(this.name).subscribe(
+      response => this.handleSuccessResponse(response),
+      error => this.handleErrorResponse(error)
+    );
+
   }
 
   handleSuccessResponse(response) {
-    // console.log(response);
-    // console.log(response.message);
     this.welcomeMessageFromResponse = response.message;
   }
 

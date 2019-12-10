@@ -9,7 +9,7 @@ export class HardcodedAuthenticationService {
   }
 
   authenticate(myPassword, myUsername) {
-    if (myPassword == '123' && myUsername == 'in28min') {
+    if (myPassword == '123' && myUsername == 'in28minutes') {
       sessionStorage.setItem('authenticatedUser',myUsername);
       return true;
     }
