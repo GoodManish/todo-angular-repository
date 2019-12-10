@@ -11,8 +11,14 @@ export class WelcomeDataService {
   }
 
   executeHelloWorldBeanService(){
-    let url = "http://localhost:8080/helloworldbean/pathvariable/Manish";
-    let objectObservable = this.http.get(url);
-    return objectObservable;
+    let url = "http://localhost:8080/helloworldbean";
+    return this.http.get<HelloWorldBean>(url);
+  }
+}
+
+export class HelloWorldBean{
+
+  constructor(public message: string){
+
   }
 }
